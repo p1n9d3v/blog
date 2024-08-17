@@ -36,10 +36,9 @@ export default function Carousel() {
             className="2xl:overflow-hidden 2xl:rounded-xl"
         >
             {images.map((image, index) => (
-                <div className="relative h-96">
+                <div className="relative h-96" key={index}>
                     <Image
                         src={image}
-                        key={index}
                         alt={`hero-${index}`}
                         className="object-cover object-center"
                         fill

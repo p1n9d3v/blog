@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Post",
+        "date": "2016-08-15",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a post",
+        "description": "This is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category1"
+    }
+]

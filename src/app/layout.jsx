@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
                     inter.className,
                     'mx-auto flex h-full min-h-screen w-full max-w-screen-2xl flex-col',
                 )}
+                suppressHydrationWarning={true}
             >
                 <Header />
                 <main className="flex-1">{children}</main>
