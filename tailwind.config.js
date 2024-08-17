@@ -8,6 +8,10 @@ module.exports = {
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
         flowbite.content(),
     ],
-    theme: {},
+    theme: {
+        container: {
+            center: true,
+        },
+    },
     plugins: [flowbite.plugin()],
 };

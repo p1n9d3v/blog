@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import { Button } from 'flowbite-react';
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="container">
+            <Image src="Avatar.svg" alt="Avatar" width={500} height={500} />
             <Button>Click me</Button>
         </main>
     );
