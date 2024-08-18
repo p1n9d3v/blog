@@ -1,3 +1,5 @@
+'use client';
+
 import ReactCarousel from 'react-multi-carousel';
 import Image from 'next/image';
 
@@ -23,13 +25,13 @@ const responsive = {
         items: 1,
     },
 };
-export default function Carousel({ images }) {
+export default function HeroCarousel({ images }) {
     return (
         <ReactCarousel
             responsive={responsive}
-            swipeable
             infinite
             autoPlay
+            ssr
             autoPlaySpeed={3000}
             removeArrowOnDeviceType={['sm', 'md', 'lg', 'xl', '2xl']}
             className="h-96 2xl:overflow-hidden 2xl:rounded-xl"

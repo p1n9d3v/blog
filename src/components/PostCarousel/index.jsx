@@ -1,5 +1,5 @@
+'use client';
 import ReactCarousel from 'react-multi-carousel';
-import Image from 'next/image';
 import PostCard from '@/components/PostCard';
 
 const responsive = {
@@ -37,7 +37,6 @@ export default function PostCarousel({ posts }) {
             autoPlay
             autoPlaySpeed={3000}
             removeArrowOnDeviceType={['xs', 'sm']}
-            className="h-96 2xl:overflow-hidden 2xl:rounded-xl"
             sliderClass="flex gap-4"
         >
             {posts.map((post, idx) => (

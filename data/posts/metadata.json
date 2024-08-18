@@ -1,0 +1,83 @@
+[
+    {
+        "title": "Post1",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a post",
+        "description": "This is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category1",
+        "featured": true
+    },
+
+    {
+        "title": "Post2",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a post",
+        "description": "This is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category2",
+        "featured": true
+    },
+    {
+        "title": "Post3",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a post",
+        "description": "This is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category3",
+        "featured": true
+    },
+    {
+        "title": "Post4",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a post",
+        "description": "This is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category4",
+        "featured": true
+    },
+    {
+        "title": "Post5",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a post",
+        "description": "This is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category5",
+        "featured": true
+    },
+    {
+        "title": "Post6",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a post",
+        "description": "This is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category6",
+        "featured": true
+    },
+    {
+        "title": "Post7",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a post",
+        "description": "This is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category7",
+        "featured": true
+    },
+    {
+        "title": "Post8",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a post",
+        "description": "This is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category8",
+        "featured": true
+    }
+]
