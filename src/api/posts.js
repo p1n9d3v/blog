@@ -13,14 +13,16 @@ export const getFeaturedPosts = async () => {
     return allPosts.filter((post) => post.featured);
 };
 
-export const getPostContent = async (fileName) => {
+export const getPost = async (fileName) => {
     const filePath = path.join(process.cwd(), 'data', 'posts', fileName.concat('.md'));
-    const metadata = await getAllPosts().find((post) => post.fileName === fileName);
+    const metadata = (await getAllPosts()).find((post) => post.fileName === fileName);
 
     if (!metadata) throw new Error('Not found');
 
     const content = await fs.readFile(filePath, 'utf-8');
 
-    console.log(content);
-    return content;
+    return {
+        metadata,
+        content,
+    };
 };

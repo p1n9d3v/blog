@@ -1,5 +1,17 @@
 [
     {
+        "fileName": "test",
+        "title": "Post1",
+        "date": "1723962700345",
+        "tags": ["tag1", "tag2"],
+        "content": "This is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a post",
+        "description": "This is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a post",
+        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
+        "category": "category1",
+        "featured": true
+    },
+    {
+        "fileName": "post1.md",
         "title": "Post1",
         "date": "1723962700345",
         "tags": ["tag1", "tag2"],
@@ -11,6 +23,7 @@
     },
 
     {
+        "fileName": "post2.md",
         "title": "Post2",
         "date": "1723962700345",
         "tags": ["tag1", "tag2"],
@@ -21,6 +34,7 @@
         "featured": true
     },
     {
+        "fileName": "post3.md",
         "title": "Post3",
         "date": "1723962700345",
         "tags": ["tag1", "tag2"],
