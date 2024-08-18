@@ -1,10 +1,16 @@
 import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import '@/styles/global.css';
 import Header from '@/components/layouts/Header';
 import { cn } from '@/utils';
 import Footer from '@/components/layouts/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
+
+const nanum = localFont({
+    src: '../../public/fonts/NanumSquareNeo/NanumSquareNeo-Variable.ttf',
+    varaibe: '--font-nanum',
+});
 
 export const metadata = {
     title: 'Create Next App',
@@ -17,6 +23,7 @@ export default function RootLayout({ children }) {
             <body
                 className={cn(
                     inter.className,
+                    nanum.className,
                     'mx-auto flex h-full min-h-screen w-full max-w-screen-2xl flex-col',
                 )}
                 suppressHydrationWarning={true}

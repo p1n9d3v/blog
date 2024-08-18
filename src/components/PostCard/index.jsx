@@ -11,6 +11,7 @@ export default function PostCard({ post, size }) {
                 md: 'max-w-md',
                 lg: 'max-w-lg',
                 xl: 'max-w-xl',
+                full: 'max-w-full',
             },
         },
         defaultVariants: {
@@ -22,10 +23,10 @@ export default function PostCard({ post, size }) {
         <Card
             className={cn(cardVariant({ size }))}
             renderImage={() => (
-                <div className="overflow-hidden">
+                <div className="min-h-[240px] overflow-hidden">
                     <Image
                         src={post.thumbnail}
-                        className="w-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                        className="h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                         alt={`${post.title} thumbnail`}
                         width={500}
                         height={500}
@@ -33,8 +34,8 @@ export default function PostCard({ post, size }) {
                 </div>
             )}
         >
-            <h4>{post.title}</h4>
-            <p>{post.description}</p>
+            <h4 className="line-clamp-1">{post.title}</h4>
+            <p className="line-clamp-1">{post.description}</p>
         </Card>
     );
 }

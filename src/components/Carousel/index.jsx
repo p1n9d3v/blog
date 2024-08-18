@@ -1,7 +1,6 @@
 import ReactCarousel from 'react-multi-carousel';
 import Image from 'next/image';
 
-const images = ['/boostcamp.png'];
 const responsive = {
     '2xl': {
         breakpoint: { max: Number.MAX_SAFE_INTEGER, min: 1280 },
@@ -24,7 +23,7 @@ const responsive = {
         items: 1,
     },
 };
-export default function Carousel() {
+export default function Carousel({ images }) {
     return (
         <ReactCarousel
             responsive={responsive}
@@ -33,7 +32,7 @@ export default function Carousel() {
             autoPlay
             autoPlaySpeed={3000}
             removeArrowOnDeviceType={['sm', 'md', 'lg', 'xl', '2xl']}
-            className="2xl:overflow-hidden 2xl:rounded-xl"
+            className="h-96 2xl:overflow-hidden 2xl:rounded-xl"
         >
             {images.map((image, index) => (
                 <div className="relative h-96" key={index}>
@@ -41,6 +40,7 @@ export default function Carousel() {
                         src={image}
                         alt={`hero-${index}`}
                         className="object-cover object-center"
+                        priority
                         fill
                     />
                 </div>

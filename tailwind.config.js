@@ -9,9 +9,14 @@ module.exports = {
         flowbite.content(),
     ],
     theme: {
+        extend: {
+            fontFamily: {
+                nanum: ['var(--font-nanum)'],
+            },
+        },
         container: {
             center: true,
         },
     },
-    plugins: [flowbite.plugin()],
+    plugins: [flowbite.plugin(), require('@tailwindcss/line-clamp')],
 };
