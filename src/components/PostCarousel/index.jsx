@@ -1,5 +1,5 @@
 'use client';
-import ReactCarousel from 'react-multi-carousel';
+import Carousel from '@/components/Carousel';
 import PostCard from '@/components/PostCard';
 
 const responsive = {
@@ -30,7 +30,7 @@ const responsive = {
 };
 export default function PostCarousel({ posts }) {
     return (
-        <ReactCarousel
+        <Carousel
             responsive={responsive}
             swipeable
             infinite
@@ -42,6 +42,6 @@ export default function PostCarousel({ posts }) {
             {posts.map((post, idx) => (
                 <PostCard post={post} size="sm" key={idx} />
             ))}
-        </ReactCarousel>
+        </Carousel>
     );
 }

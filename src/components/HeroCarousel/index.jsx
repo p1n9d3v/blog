@@ -1,6 +1,6 @@
 'use client';
 
-import ReactCarousel from 'react-multi-carousel';
+import Carousel from '@/components/Carousel';
 import Image from 'next/image';
 
 const responsive = {
@@ -27,7 +27,7 @@ const responsive = {
 };
 export default function HeroCarousel({ images }) {
     return (
-        <ReactCarousel
+        <Carousel
             responsive={responsive}
             infinite
             autoPlay
@@ -47,6 +47,6 @@ export default function HeroCarousel({ images }) {
                     />
                 </div>
             ))}
-        </ReactCarousel>
+        </Carousel>
     );
 }
