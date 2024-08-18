@@ -23,7 +23,7 @@ export default function PostCard({ post, size }) {
         <Card
             className={cn(cardVariant({ size }))}
             renderImage={() => (
-                <div className="min-h-[240px] overflow-hidden">
+                <div className="overflow-hidden">
                     <Image
                         src={post.thumbnail}
                         className="h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"

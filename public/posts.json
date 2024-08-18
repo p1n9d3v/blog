@@ -79,15 +79,5 @@
         "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2Fblog%2Fimage-1.jpg&w=640&q=75",
         "category": "category8",
         "featured": true
-    },
-    {
-        "title": "Post9",
-        "date": "1723962700345",
-        "tags": ["tag1", "tag2"],
-        "content": "This is a post",
-        "description": "This is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a postThis is a post",
-        "thumbnail": "https://flowbite-react.com/_next/image?url=%2Fimages%2F",
-        "category": "category9",
-        "featured": false
     }
 ]
