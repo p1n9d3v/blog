@@ -20,3 +20,18 @@
         @apply text-xl font-semibold;
     }
 }
+
+@layer utilities {
+    .shadow-header {
+        border-radius: 0 0 0.4rem 0.4rem;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        border: 1px 0 1px 1px solid rgba(255, 255, 255, 0.21);
+    }
+    .shadow-footer {
+        border-radius: 0.4rem 0.4rem 0 0;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px -3px 5px;
+        border: 1px 1px 0 1px solid rgba(255, 255, 255, 0.21);
+    }
+}

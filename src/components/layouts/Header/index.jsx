@@ -4,7 +4,7 @@ import React from 'react';
 
 function Header() {
     return (
-        <header>
+        <header className="shadow-header z-10 min-h-14">
             <MegaMenu>
                 <NavbarBrand>
                     <span className="text-3xl font-bold uppercase">p1n9</span>

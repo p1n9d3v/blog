@@ -18,5 +18,9 @@ module.exports = {
             center: true,
         },
     },
-    plugins: [flowbite.plugin(), require('@tailwindcss/line-clamp')],
+    plugins: [
+        flowbite.plugin(),
+        require('@tailwindcss/line-clamp'),
+        require('@tailwindcss/typography'),
+    ],
 };
