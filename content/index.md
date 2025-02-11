@@ -1,5 +1,5 @@
 ---
-title: Test Post
+title: Welcome to Quartz
 ---
 
 # Reconciliation
