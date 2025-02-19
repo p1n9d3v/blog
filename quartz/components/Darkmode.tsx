@@ -9,7 +9,7 @@ import { classNames } from "../util/lang"
 
 const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
   return (
-    <button class={classNames(displayClass, "darkmode")} id="darkmode">
+    <button class={classNames(displayClass, "darkmode")} id="darkmode" style={{ display: "none" }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

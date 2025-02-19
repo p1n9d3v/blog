@@ -67,6 +67,10 @@ ${stylesheet.join("\n\n")}
   --tertiary: ${theme.colors.darkMode.tertiary};
   --highlight: ${theme.colors.darkMode.highlight};
   --textHighlight: ${theme.colors.darkMode.textHighlight};
+  --searchBackground: #393639;
+  --codeBackground:#E06C75;
+  --blue:#61AFEF;
+  --yellow:#E5C07B;
 }
 `
 }

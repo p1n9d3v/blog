@@ -73,10 +73,11 @@ a {
   font-weight: $semiBoldWeight;
   text-decoration: none;
   transition: color 0.2s ease;
-  color: var(--secondary);
-
+  // color: var(--secondary);
+  color: var(--blue);
   &:hover {
-    color: var(--tertiary) !important;
+    // color: var(--tertiary) !important;
+    filter: brightness(1.2);
   }
 
   &.internal {
@@ -95,6 +96,7 @@ a {
       &::before {
         content: "#";
       }
+      color: var(--yellow);
     }
   }
 
@@ -466,7 +468,8 @@ code {
   font-family: var(--codeFont);
   border-radius: 5px;
   padding: 0.1rem 0.2rem;
-  background: var(--lightgray);
+  // background: var(--lightgray);
+  background: var(--codeBackground);
 }
 
 tbody,

@@ -101,9 +101,13 @@
   }
 
   &[data-callout="example"] {
-    --color: #7a43b5;
-    --border: #7a43b544;
-    --bg: #7a43b510;
+    // --color: #7a43b5;
+    // --border: #7a43b544;
+    // --bg: #7a43b510;
+    // --callout-icon: var(--callout-icon-example);
+    --color: #dba642;
+    --border: #dba64244;
+    --bg: #dba64210;
     --callout-icon: var(--callout-icon-example);
   }
 
