@@ -1,17 +1,15 @@
 ---
-tags:
-  - react
+title: Infinite Scroll
+tags: [react]
 ---
-
-# 무한 스크롤
 
 ![[infinite-scroll-1.gif]]
 
-## Intersection Observer API
+# Intersection Observer API
 
 Intersection Observer API는 특정 요소가 상위 요소 또는 최상위 요소와의 교차점의 변화를 비동기적으로 관찰할 수 있는 API이다. 특정 요소의 보여짐을 관찰하여 데이터를 가져오는 방법으로 무한 스크롤을 구현할 수 있다.
 
-### Options
+## Options
 
 ```ts
 const options = {
@@ -30,9 +28,9 @@ const observer = new IntersectionObserver(callback, options)
 - `rootMargin` : `root`의 뷰포트의 여백(`10px 20px 30px 40px`, 위 오른쪽 아래 왼쪽).
 - `threshold` : 특정 요소가 몇 퍼센트 보여져야 정의한 콜백 함수를 실행할지를 나타내는 임계값.
 
-## 구현
+# 구현
 
-### root와 target 요소 정의
+## root와 target 요소 정의
 
 ```tsx
 const containerRef = useRef<HTMLDivElement>(null)
@@ -53,7 +51,7 @@ return (
 
 `containerRef`로 참조한 `div` 태그를 기준으로 `targetRef`가 참조하는 요소가 얼마만큼 보여짐(`threshold`)을 관찰한다.
 
-### 데이터 패치
+## 데이터 패치
 
 ```tsx
 const fetchData = async (pageNum: number) => {
@@ -80,7 +78,7 @@ const fetchData = async (pageNum: number) => {
 }
 ```
 
-### Intersection Observer API 등록
+## Intersection Observer API 등록
 
 ```tsx
 useEffect(() => {

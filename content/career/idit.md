@@ -1,17 +1,17 @@
 ---
+title: Idit(Ktourstory)
 tags: [career]
 ---
 
-# Idit (2023.10 - 2024.04)
+2023.10 - 2024.04
 
----
+# Ktourstory
 
-## Ktourstory
+- 연간 20만명이 사용하는 서비스의 기능 개발과 유지보수
+  - 여행객과 가이드간의 채팅 개발
+  - 채팅 관리 및 모니터링 기능 개발
 
-- 여행객과 가이드간의 채팅 개발
-- 채팅 관리 및 모니터링 기능 개발
-
-### Skill
+## Skill
 
 - TypeScript
 - React

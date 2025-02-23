@@ -1,16 +1,15 @@
 ---
+title: Coredot-Lab
 tags: [career]
 ---
 
-# Coredot-Lab(2022.12 - 2023.08)
+2022.12 - 2023.08
 
----
-
-## AI 경진대회 서비스
+# AI 경진대회 서비스
 
 - ai 경진대회 서비스(외주) 프론트엔드와 어드민 개발
 
-### Skill
+## Skill
 
 - TypeScript
 - NextJS
@@ -19,7 +18,7 @@ tags: [career]
 - Web3, Metamask
 - Kakao Cloud
 
-### References
+## References
 
 ![[coredot-1.png]]
 ![[coredot-2.png]]
@@ -29,11 +28,11 @@ tags: [career]
 
 ---
 
-## NFT Marketplace
+# NFT Marketplace
 
 - NFT 마켓 플레이스(외주) 프론트엔드와 어드민 개발
 
-### Skill
+## Skill
 
 - Typescript
 - NextJS
@@ -50,17 +49,17 @@ tags: [career]
 
 ---
 
-## Publishing
+# Publishing
 
 - trentacorp,coredot-lab,ccfc,climate101 퍼블리싱 외주
 
-### Skill
+## Skill
 
 - HTML
 - JavaScript
 - CSS
 
-### References
+## References
 
 ![[coredot-9.png]]
 ![[coredot-10.png]]

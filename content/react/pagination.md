@@ -1,19 +1,48 @@
 ---
+title: Pagination
 tags: [react]
 ---
 
-# 페이지네이션
-
 ![[pagination-2.gif]]
+
+서버와 클라이언트 간의 페이지네이션을 구현하게 되면 기본적으로 서버에서 아래와 같이 데이터를 받기 때문에 보다 쉽게 페이지네이션을 구현할 수 있다.
+
+```json
+{
+  "data": [
+    { "id": 1, "name": "Item 1" },
+    { "id": 2, "name": "Item 2" },
+    { "id": 3, "name": "Item 3" }
+    // ... more items
+  ],
+  "metadata": {
+    "totalItems": 100,
+    "currentPage": 1,
+    "totalPages": 10,
+    "pageSize": 10,
+    "hasNextPage": true,
+    "hasPreviousPage": false
+  }
+}
+```
+
+- `totalItems` : 전체 데이터 항목의 수.
+- `currentPage` : 현재 페이지 번호.
+- `totalPages` : 전체 페이지 수.
+- `pageSize` : 한 페이지에 포함된 항목의 수.
+- `hasNextPage` : 다음 페이지 존재 여부.
+- `hasPreviousPage` : 이전 페이지 존재 여부.
+
+# 구현
 
 ## 목업 데이터
 
 ```ts
-interface DataItem {
+interface DataItem j{
   id: number
   name: string
   email: string
-}
+}j
 
 const datas: DataItem[] = Array.from({ length: 110 }, (_, i) => ({
   id: i,

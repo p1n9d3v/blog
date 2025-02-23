@@ -132,6 +132,30 @@ a {
       font-size: 2rem;
     }
 
+    & h1 {
+      color: #ef586f;
+    }
+
+    & h2 {
+      color: #d19966;
+    }
+
+    & h3 {
+      color: #e5c07b;
+    }
+
+    & h4 {
+      color: #89ca79;
+    }
+
+    & h5 {
+      color: #61afef;
+    }
+
+    & h6 {
+      color: #2cbac5;
+    }
+
     & li:has(> input[type="checkbox"]) {
       list-style-type: none;
       padding-left: 0;
