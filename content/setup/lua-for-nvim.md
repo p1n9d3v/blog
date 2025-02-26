@@ -1,5 +1,5 @@
 ---
-title: Pagination
+title: Lua for Nvim
 tags: [react]
 ---
 
