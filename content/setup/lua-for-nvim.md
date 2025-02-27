@@ -1,6 +1,6 @@
 ---
 title: Lua for Nvim
-tags: [react]
+tags: [setup]
 ---
 
 # Nvim Lua
