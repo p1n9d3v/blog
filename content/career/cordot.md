@@ -41,7 +41,7 @@ tags: [career]
 - Web3, Metamask
 - Vercel
 
-### References
+## References
 
 ![[coredot-6.png]]
 ![[coredot-7.png]]

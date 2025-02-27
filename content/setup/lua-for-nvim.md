@@ -3,9 +3,7 @@ title: Lua for Nvim
 tags: [setup]
 ---
 
-# Nvim Lua
-
-## Module
+# Module
 
 ```lua
 require('module')
@@ -19,7 +17,7 @@ require('directory.module')
 > [!TIP]
 > init.lua아 파일이 있다면 `require('directory')`형태로 모듈을 불러올 수 있다.
 
-### pcall
+## pcall
 
 ```lua
 local ok, _ = pcall(require, 'module_with_error')
@@ -30,7 +28,7 @@ end
 
 `pcall()`함수를 사용하여 현재 실행중인 스크립트가 어떠한 에러로 인해 스크립트가 종료되는 것을 방지할 수 있다.
 
-## lua, luado
+# lua, luado
 
 ```cmd
 :lua <lua script>
@@ -77,7 +75,7 @@ aaaaaa
 > [!TIP]
 > 버퍼(Buffer)는 버퍼는 파일의 내용을 메모리에 불러와 수정할 수 있는 임시 작업 공간이다.
 
-## luaeval
+# luaeval
 
 `luaeval()` 함수는 인자로 입력 받은 문자열을 루아 표현식 변경하여 값을 도출하고 그 값을 리턴한다.
 
@@ -110,7 +108,7 @@ echo dict.foo
 echo luaeval('_A[1] + _A[2]', [1,1])
 ```
 
-## v:lua
+# v:lua
 
 `v:lua`는 루아의 전역 공간(`_G`)에 존재하는 함수들을 vim script에서 접근할 수 있게 해준다.
 
@@ -122,11 +120,11 @@ end
 
 위의 함수를 CmdLine에서 `call v:lua.call_hello_world()`로 호출할 수 있다.
 
-### \_G
+## \_G
 
 A global variable (not a function) that holds the global environment (that is, `_G._G = _G`). Lua itself does not use this variable; changing its value does not affect any environment, nor vice-versa. (Use [`setfenv`](https://www.lua.org/manual/5.1/manual.html#pdf-setfenv) to change environments.)
 
-## 알아두면 좋을 모듈
+# 알아두면 좋을 모듈
 
 - `vim.inspect` : lua object를 읽기 편한 문자열로 변환하는 모듈.
 - `vim.regex` : lua에서 vim regex를 사용할 수 있는 모듈.
@@ -136,7 +134,7 @@ A global variable (not a function) that holds the global environment (that is, 
 - `vim.lsp` : 내장 LSP 클라이언트에 접근할 수 있는 모듈.
 - `vim.treesitter` : `tree-sitter`라이브러리 기능을 사용할 수 있는 모듈.
 
-## 커스텀 유틸리티
+# 커스텀 유틸리티
 
 nvim에서 자신이 만든 유틸리티 모듈을 사용하고 싶다면 파일 생성 후 `init.lua`에 모듈을 불러와주면 된다.
 
@@ -160,9 +158,9 @@ require("utils.put")
 require("config.lazy")
 ```
 
-## Lua에서 Vim script 사용 방법
+# Lua에서 Vim script 사용 방법
 
-### vim.api.nvim_eval()
+## vim.api.nvim_eval()
 
 ```lua
 -- 데이터 타입 변환 예
@@ -177,7 +175,7 @@ print(vim.api.nvim_eval('v:null')) -- nil
 
 > [!Caution] >`luaeva()`과 동일하지만 표현식에 데이터를 넘길 수 있는 변수 `_A`를 제공하지 않는다.
 
-### vim.api.nvim_command()
+## vim.api.nvim_command()
 
 ```lua
 vim.api.nvim_command('new')
@@ -188,7 +186,7 @@ vim.api.nvim_command('%s/foo/bar/g')
 
 해당 함수는 인자로 입력 받은 문자열로 된 커맨드를 실행할 수 있다.
 
-### vim.cmd()
+## vim.cmd()
 
 해당 함수는 커맨드 `vim.api.nvim_exec()`함수와 같이 vim script 코드 조각을 평가할 수 있다.
 
@@ -196,7 +194,7 @@ vim.api.nvim_command('%s/foo/bar/g')
 vim.cmd([[%s/\Vfoo/bar/g]])
 ```
 
-### vim.api.nvim_replace_termcodes()
+## vim.api.nvim_replace_termcodes()
 
 해당 함수는 터미널 코드와 vim 키코드를 escape 할 수 있게 해준다.
 
@@ -227,17 +225,17 @@ vim.keymap.set('i', '<Tab>', function()
 end, {expr = true})
 ```
 
-## Keymap
+# Keymap
 
 Vim에는 다양한 Mode가 존재한다. 특정한 Mode에 따라서 `vim.keymap`을 통해서 키를 조작할 수 있다.
 
-### Arguments
+## Arguments
 
 - `{mode}` : Mode prefix.
 - `{lhs}` : 맵핑할 키.
 - `{rhs}` : 맵핑한 키를 통해 실행할 command 또는 lua funciton.
 
-### Option
+## Option
 
 key를 맵핑할 때 4번째 인자에 옵션을 지정할 수 있다.
 
@@ -255,7 +253,7 @@ key를 맵핑할 때 4번째 인자에 옵션을 지정할 수 있다.
 - `desc` : 설명.
 - `remap` : 맵핑된 키에 대한 (비)재귀적 여부. 기본값은 비재귀적이다.
 
-#### (Non-)recursive
+### (Non-)recursive
 
 - Non-recursive(default) : `vim.keymap.set()`을 통해서 키를 맵핑하면 다른 맵핑된 `{rhs}`는 실행되지 않는다.
 - recursive : 다른 맵핑된 `{rhs}` 실행을 허용한다.
@@ -272,7 +270,7 @@ vim.keymap.set('n', '<leader>b', '<leader>a', { remap = true })
 
 > [!TIP] >`noremap`을 통해서도 Non-recursive가 적용된 키 맵핑을 할 수 있다. `vim.keymap.set()`을 사용한 것과 동일하다.
 
-### Mode
+## Mode
 
 | String value           | Help page     | Affected modes                           | Vimscript equivalent |
 | ---------------------- | ------------- | ---------------------------------------- | -------------------- |
@@ -288,7 +286,7 @@ vim.keymap.set('n', '<leader>b', '<leader>a', { remap = true })
 | `'c'`                  | `mapmode-c`   | Command-line                             | `:cmap`              |
 | `'t'`                  | `mapmode-t`   | Terminal                                 | `:tmap`              |
 
-### vim.keymap.set()
+## vim.keymap.set()
 
 ```lua
 vim.keymap.set('n', '<Leader>ex1', '<Cmd>lua vim.notify("Example 1")<CR>')
@@ -300,14 +298,14 @@ vim.keymap.set('i', '<Tab>', function()
 end, {expr = true})
 ```
 
-### vim.keymap.del()
+## vim.keymap.del()
 
 ```lua
 vim.keymap.del('n', '<Leader>ex1')
 vim.keymap.del({'n', 'c'}, '<Leader>ex2', {buffer = true})
 ```
 
-## Commands
+# Commands
 
 ![[lua-for-nvim-1.png]]
 
@@ -328,7 +326,7 @@ vim.cmd([[
 ]])
 ```
 
-## Function
+# Function
 
 Vim은 `vim.fn`을 통하여 Vimscript function을 lua에서 호출할 수 있다.
 
@@ -344,7 +342,7 @@ local function print_stdout(chan_id, data, name)
 end
 ```
 
-## Variable
+# Variable
 
 Vim에는 `global`, `buffer`, `window`, `tab`, `predefined`, `env`의 환경에서 변수를 설정할 수 있다.
 
@@ -355,7 +353,7 @@ Vim에는 `global`, `buffer`, `window`, `tab`, `predefined`, `env`의 환경에�
 - `vim.v` : 미리 정의된 변수.
 - `vim.env` : 에디터 세션 내의 정의한 환경 변수.
 
-### Data type
+## Data type
 
 데이터 타입에 대해서는 자동적으로 변경된다.
 
@@ -368,7 +366,7 @@ vim.g.some_global_variables = {
 vim.print(vim.g.some_global_variables.key2) -- 300
 ```
 
-### Target specific something
+## Target specific something
 
 숫자를 통해서 특정 buffer, window, tabpage에 접근할 수 있다.
 
@@ -377,7 +375,7 @@ vim.b[2].myvar = 1               -- set myvar for buffer number 2
 vim.w[1005].myothervar = true    -- set myothervar for window ID 1005
 ```
 
-### Can access a property using `#`
+## Can access a property using `#`
 
 아래의 코드와 같이 `#`을 통해서 변수 프로퍼티에 접근할 수 있다.
 
@@ -385,7 +383,7 @@ vim.w[1005].myothervar = true    -- set myothervar for window ID 1005
 vim.g['my#variable'] = 1
 ```
 
-### Delete a variable
+## Delete a variable
 
 변수를 삭제할 때는 `nil`을 할당해주면 된다.
 
@@ -393,7 +391,7 @@ vim.g['my#variable'] = 1
 vim.g['my#variable'] = nil
 ```
 
-## Option
+# Option
 
 `vim.opt`를 통해서 옵션에 대한 설정을 할 수 있다. vim의 옵션에는 `set number`, `set cursorline`, `set smarttab` 등을 지정할 수 있다.
 

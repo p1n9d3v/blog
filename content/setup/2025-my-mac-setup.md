@@ -3,29 +3,27 @@ aliases: [2025 My Mac Setup]
 tags: [setup]
 ---
 
-# 2025 My Mac Setup
-
 전체적인 파일 설정은 [dotfiles](https://github.com/p1n9d3v/dotfiles/tree/v4)를 참고하기 바란다.
 
-## Package Managers
+# Package Managers
 
-### Nix
+## Nix
 
 Nix는 Homebrew와 같은 Package Manager이다. nix라는 언어를 통해서 설정할 수 있으며 간단하게 설치가 가능하다. 또한 순수 함수형 패키지 관리 시스템으로 패키지의 빌드와 설치가 독립적으로 이루어져 다른 패키지에 영향을 주지 않도록 되어있다.
 
-### Flake
+## Flake
 
 Flake는 Nix 패키지의 설정을 정의하고 관리할 수 있게 해준다. 쉽게 package.json이라고 생각하면 된다.
 
-### Nix-Darwin
+## Nix-Darwin
 
 Nix-Darwin은 macOS에서 Nix를 사용하여 시스템 설정을 관리할 수 있도록 해주는 프로젝트이다.
 
-### Homebrew
+## Homebrew
 
 Homebrew는 Mac에서 사용하는 Package Manager이다. Nix-homebrew를 통해서 homebrew를 통한 패키지를 관리 할 수 있다.
 
-### Usage
+## Usage
 
 ```nix
   # Packages
@@ -101,7 +99,7 @@ Homebrew는 Mac에서 사용하는 Package Manager이다. Nix-homebrew를 통해
 
 전체적인 설치나 설정은 아래의 유튜브와 dotfiles 통해서 확인하기 바란다.
 
-### References
+## References
 
 - [Nix 설치 및 설정 방법](https://www.youtube.com/watch?v=Z8BL8mdzWHI&t=282)
 - [Nix](https://search.nixos.org/packages)
@@ -109,56 +107,56 @@ Homebrew는 Mac에서 사용하는 Package Manager이다. Nix-homebrew를 통해
 - [Nix Homebrew](https://github.com/zhaofengli/nix-homebrew)
 - [My Nix OS](https://mynixos.com/)
 
-## Applications
+# Applications
 
-### [Ghostty](https://ghostty.org/)
+## [Ghostty](https://ghostty.org/)
 
 GPU를 활용한 terminal emulator이며 설정도 간편하고 많은 기능들이 있다. wezterm, iterm, alacritty, kitty 등 많은 terminal emulator가 있지만 ghostty의 캐릭터가 귀엽다.
 ![[my-mac-setup-1.png]]
 
-### [Obsidian](https://obsidian.md/)
+## [Obsidian](https://obsidian.md/)
 
 Open source Markdown editor인 노트 앱이다. backup은 git을 통해서 관리하고 있고 폴더 구조는 P.A.R.A를 사용하고 있다.
 
 > [!TIP] >[Obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)을 통해서 nvim에서 obsidian을 사용할 수 있다.
 
-### [Espanso](https://espanso.org/)
+## [Espanso](https://espanso.org/)
 
 keyword를 통해서 사용자가 정의한 문장으로 변경할 수 있다.
 ![[my-mac-setup-2.gif]]
 
-### [RayCast](https://www.raycast.com/)
+## [RayCast](https://www.raycast.com/)
 
 Mac Spotlight보다 많은 기능을 제공하는 Application Launcher로 spotlight 기본 기능뿐만 아니라 번역, AI, Window Manage 등 다양한 기능을 사용할 수 있으며, store 기능을 통해 유저들이 만든 다양한 패키지를 사용할 수 있다.
 
-### [DevToys](https://devtoys.app/)
+## [DevToys](https://devtoys.app/)
 
 개발자에게 필요한 기능들을 종합적으로 가지고 있는 application이다.
 ![[my-mac-setup-3.png]]
 
-### [Ollama](https://ollama.com/?source=post_page-----60cf3879bad8--------------------------------)
+## [Ollama](https://ollama.com/?source=post_page-----60cf3879bad8--------------------------------)
 
 Local에서 LLM을 실행할 수 있는 도구이다.
 ![[my-mac-setup-4.gif]]
 
-### [App Cleaner](https://freemacsoft.net/appcleaner/)
+## [App Cleaner](https://freemacsoft.net/appcleaner/)
 
 Application을 제거하는 무료 도구로 관련된 파일까지 찾아서 제거해준다.
 
-### [hammerspoon](https://www.hammerspoon.org/)
+## [hammerspoon](https://www.hammerspoon.org/)
 
 lua 언어를 활용하여 macOS의 윈도우, 키맵, 마우스 포인터, 파일 시스템 등을 조작할 수 있는 도구이다. 나는 현재 키맵만 정의해서 사용하고 있는데 키맵만 변경하려고 한다면 [karabiner](https://karabiner-elements.pqrs.org/)를 추천한다.
 
-### [posting](https://posting.sh/)
+## [posting](https://posting.sh/)
 
 터미널에서 사용할 수 있는 API Client 도구이다. nvim에서 활용하고 싶다면 [rest.nvim](https://github.com/rest-nvim/rest.nvim)을 확인해 보기 바란다.
 ![[my-mac-setup-5.gif]]
 
-### [Gifski](https://gif.ski/)
+## [Gifski](https://gif.ski/)
 
 Gifski는 비디오를 고품질 GIF로 변환하는 도구이다.
 
-## Shell tools
+# Shell tools
 
 shell은 zsh를 사용하고 있다. 아래의 리스트는 내가 자주 사용하는 shell 도구들이다. 관심 있는 도구들을 homebrew 또는 nix를 통해서 쉽게 설치할 수 있다.
 
@@ -186,12 +184,12 @@ shell은 zsh를 사용하고 있다. 아래의 리스트는 내가 자주 사용
   - notify : `gh ext install meiji163/gh-notify`
 - [shell color script](https://gitlab.com/dwt1/shell-color-scripts) : A collection of terminal color scripts.
 
-## Lazyvim
+# Lazyvim
 
 ![[my-mac-setup-8.png]]
 Layzvim은 `lazy.nvim`모듈을 활용하여 쉽게 패키지를 다운로드 할 수 있고 커스터마이징이 쉬운 vim이다.
 
-### Keymaps
+## Keymaps
 
 `keymaps.lua`에 정의한 키맵이다. "키"를 누르게 되면 "동작"이 실행되어 진다.
 
@@ -233,26 +231,26 @@ Layzvim은 `lazy.nvim`모듈을 활용하여 쉽게 패키지를 다운로드 �
 위의 키맵 말고도 [Lazyvim에서 제공하는 키맵](https://www.lazyvim.org/keymaps)이 있다. 또한 vim의 cmdline에 `WhichKey`를 입력하면 키에 대한 테이블을 볼 수 있다.
 ![[my-mac-setup-6.png]]
 
-### LazyExtras
+## LazyExtras
 
 Lazyvim은 `LazyExtra` 명령어를 통해서 플러그인을 쉽게 다운로드 받을 수 있다. 다운로드하고 싶은 플러그인에 커서를 두고 `x`를 누르면 설치할 수 있다.
 ![[my-mac-setup-7.png]]
 
-### AI
+## AI
 
-#### [Avante](https://github.com/yetone/avante.nvim)
+### [Avante](https://github.com/yetone/avante.nvim)
 
 ![[my-mac-setup-9.gif]]
 
 Vim에서도 ai api(Cluade, Open AI, Gemini 등)를 연결하여 cursor처럼 사용할 수 있다.
 
-#### [Supermaven](https://github.com/supermaven-inc/supermaven-nvim)
+### [Supermaven](https://github.com/supermaven-inc/supermaven-nvim)
 
 Copilot 대체재로 나쁘지 않은 것 같다. Pro는 30일 동안 무료로 사용 가능하다. LazyExtras를 통해서 쉽게 설치할 수 있으며
 
 - <https://supermaven.com/>
 
-## Vimium
+# Vimium
 
 Vim과 비슷하게 키맵을 통해서 브라우저를 조작할 수 있는 extension이다.
 
