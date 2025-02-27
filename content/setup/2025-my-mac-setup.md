@@ -246,7 +246,7 @@ Vim에서도 ai api(Cluade, Open AI, Gemini 등)를 연결하여 cursor처럼 �
 
 ### [Supermaven](https://github.com/supermaven-inc/supermaven-nvim)
 
-Copilot 대체재로 나쁘지 않은 것 같다. Pro는 30일 동안 무료로 사용 가능하다. LazyExtras를 통해서 쉽게 설치할 수 있으며
+Copilot 대체재로 나쁘지 않은 것 같다. Pro는 30일 동안 무료로 사용 가능하다. LazyExtras를 통해서 쉽게 설치할 수 있다.
 
 - <https://supermaven.com/>
 
