@@ -242,6 +242,8 @@ Lazyvim은 `LazyExtra` 명령어를 통해서 플러그인을 쉽게 다운로�
 
 #### [Avante](https://github.com/yetone/avante.nvim)
 
+![[my-mac-setup-9.gif]]
+
 Vim에서도 ai api(Cluade, Open AI, Gemini 등)를 연결하여 cursor처럼 사용할 수 있다.
 
 #### [Supermaven](https://github.com/supermaven-inc/supermaven-nvim)
@@ -269,4 +271,3 @@ map <c-m> goForward
 map <c-p> previousTab
 map <c-n> nextTab
 ```
-
