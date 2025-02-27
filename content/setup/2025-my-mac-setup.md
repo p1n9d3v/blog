@@ -1,5 +1,5 @@
 ---
-aliases: [2025 My Mac Setup]
+title: [2025 My Mac Setup]
 tags: [setup]
 ---
 
