@@ -26,12 +26,12 @@ tags: [react]
 }
 ```
 
-- `totalItems` : 전체 데이터 항목의 수.
-- `currentPage` : 현재 페이지 번호.
-- `totalPages` : 전체 페이지 수.
-- `pageSize` : 한 페이지에 포함된 항목의 수.
-- `hasNextPage` : 다음 페이지 존재 여부.
-- `hasPreviousPage` : 이전 페이지 존재 여부.
+- `totalItems` : 전체 데이터 항목의 수
+- `currentPage` : 현재 페이지 번호
+- `totalPages` : 전체 페이지 수
+- `pageSize` : 한 페이지에 포함된 항목의 수
+- `hasNextPage` : 다음 페이지 존재 여부
+- `hasPreviousPage` : 이전 페이지 존재 여부
 
 # 구현
 
@@ -62,8 +62,8 @@ const PAGINATION_CONFIG = {
 } as const
 ```
 
-- `ITEMS_PER_PAGE` : 한 페이지에 보여질 데이터 수.
-- `VISIBLE_PAGES` : 보여질 페이지 범위.
+- `ITEMS_PER_PAGE` : 한 페이지에 보여질 데이터 수
+- `VISIBLE_PAGES` : 보여질 페이지 범위
 
 ## 전체 페이지 수
 
@@ -71,7 +71,7 @@ const PAGINATION_CONFIG = {
 const totalPages = Math.ceil(datas.length / PAGINATION_CONFIG.ITEMS_PER_PAGE)
 ```
 
-- 전체 데이터의 크기와 한 페이지에 보여질 데이터 수를 나누어 전체 페이지 수를 구한다.
+- 전체 데이터의 크기와 한 페이지에 보여질 데이터 수를 나누어 전체 페이지 수를 구한다
 
 > [!example]
 >

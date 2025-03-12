@@ -162,27 +162,27 @@ shell은 zsh를 사용하고 있다. 아래의 리스트는 내가 자주 사용
 
 - [zsh function](https://zsh.sourceforge.io/Doc/Release/Editor-Functions-Index.html) : zsh functions documentation.(not tool)
 - [neovim](https://github.com/neovim/neovim) : A highly configurable text editor built to enable efficient and productive text editing.
-- [git](https://github.com/git/git) : A distributed version control system for tracking changes in source code.
-- [gcc14](https://github.com/gcc-mirror/gcc) : The GNU Compiler Collection, a set of compilers for various programming languages.
-- [nushell](https://github.com/nushell/nushell) : A modern shell that brings a new approach to command line usage with structured data.
-- [eza](https://github.com/eza-community/eza) : A modern replacement for `ls` with more features and better defaults.
-- [fzf](https://github.com/junegunn/fzf) : A command-line fuzzy finder that enables quick searching and selection from lists.
-- [zoxide](https://github.com/ajeetdsouza/zoxide) : A smarter cd command that tracks your most used directories.
-- [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) : A prompt theme engine for any shell that helps to create beautiful command line prompts.
-- [stow](https://github.com/aspiers/stow) : A symlink manager that helps to manage your dotfiles and configurations.
-- [lazygit](https://github.com/jesseduffield/lazygit) : A simple terminal UI for git commands, making git easier to use.
-  - [aicommit2](https://github.com/tak-bro/aicommit2) : A tool generates automatic commits, and it can use Ollama too.
-- [ripgrep](https://github.com/BurntSushi/ripgrep) : A line-oriented search tool that recursively searches your current directory for a regex pattern.
-- [pnpm](https://github.com/pnpm/pnpm) : A fast, disk space-efficient package manager for JavaScript.
-- [thefuck](https://github.com/nvbn/thefuck) : A tool that corrects your previous console commands.
-- [tldr](https://github.com/tldr-pages/tldr) : A collection of simplified and community-driven man pages.
-- [bat](https://github.com/sharkdp/bat) : A cat clone with syntax highlighting and Git integration.
-- [rip2](https://github.com/MilesCranmer/rip2) : A tool for converting ripgrep results into a more user-friendly format.
-- [navi](https://github.com/denisidoro/navi) : An interactive cheatsheet tool for the command line.
-- [pngpaste](https://github.com/jcsalterego/pngpaste) : Paste PNG into files on MacOS, much like pbpaste does for text.
+- [git](https://github.com/git/git) : A distributed version control system for tracking changes in source code
+- [gcc14](https://github.com/gcc-mirror/gcc) : The GNU Compiler Collection, a set of compilers for various programming languages
+- [nushell](https://github.com/nushell/nushell) : A modern shell that brings a new approach to command line usage with structured data
+- [eza](https://github.com/eza-community/eza) : A modern replacement for `ls` with more features and better defaults
+- [fzf](https://github.com/junegunn/fzf) : A command-line fuzzy finder that enables quick searching and selection from lists
+- [zoxide](https://github.com/ajeetdsouza/zoxide) : A smarter cd command that tracks your most used directories
+- [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh) : A prompt theme engine for any shell that helps to create beautiful command line prompts
+- [stow](https://github.com/aspiers/stow) : A symlink manager that helps to manage your dotfiles and configurations
+- [lazygit](https://github.com/jesseduffield/lazygit) : A simple terminal UI for git commands, making git easier to use
+  - [aicommit2](https://github.com/tak-bro/aicommit2) : A tool generates automatic commits, and it can use Ollama too
+- [ripgrep](https://github.com/BurntSushi/ripgrep) : A line-oriented search tool that recursively searches your current directory for a regex pattern
+- [pnpm](https://github.com/pnpm/pnpm) : A fast, disk space-efficient package manager for JavaScript
+- [thefuck](https://github.com/nvbn/thefuck) : A tool that corrects your previous console commands
+- [tldr](https://github.com/tldr-pages/tldr) : A collection of simplified and community-driven man pages
+- [bat](https://github.com/sharkdp/bat) : A cat clone with syntax highlighting and Git integration
+- [rip2](https://github.com/MilesCranmer/rip2) : A tool for converting ripgrep results into a more user-friendly format
+- [navi](https://github.com/denisidoro/navi) : An interactive cheatsheet tool for the command line
+- [pngpaste](https://github.com/jcsalterego/pngpaste) : Paste PNG into files on MacOS, much like pbpaste does for text
 - [gh](https://cli.github.com/) : Github CLI.
   - notify : `gh ext install meiji163/gh-notify`
-- [shell color script](https://gitlab.com/dwt1/shell-color-scripts) : A collection of terminal color scripts.
+- [shell color script](https://gitlab.com/dwt1/shell-color-scripts) : A collection of terminal color scripts
 
 # Lazyvim
 

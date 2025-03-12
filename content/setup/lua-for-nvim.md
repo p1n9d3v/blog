@@ -11,8 +11,8 @@ require('directory/module')
 require('directory.module')
 ```
 
-- `require` 키워드를 통해 모듈을 불러올 수 있다.
-- `/`, `.`를 통해서 경로를 구분할 수 있다.
+- `require` 키워드를 통해 모듈을 불러올 수 있다
+- `/`, `.`를 통해서 경로를 구분할 수 있다
 
 > [!TIP]
 > init.lua아 파일이 있다면 `require('directory')`형태로 모듈을 불러올 수 있다.
@@ -37,7 +37,7 @@ end
 
 CmdLine을 통해서 lua를 실행할 수 있다.
 
-- `:lua` : 각각의 스코프를 가지고 있으며 외부에서 접근할 수 없다.
+- `:lua` : 각각의 스코프를 가지고 있으며 외부에서 접근할 수 없다
 
 ```lua
 :lua local foo = 1
@@ -45,7 +45,7 @@ CmdLine을 통해서 lua를 실행할 수 있다.
 " prints 'nil' instead of '1'
 ```
 
-- `:luado` : 현재 버퍼에 라인들의 특정한 범위를 대상으로 루아 코드를 실행한다.
+- `:luado` : 현재 버퍼에 라인들의 특정한 범위를 대상으로 루아 코드를 실행한다
 
 ```lua
 aaaaaa
@@ -126,13 +126,13 @@ A global variable (not a function) that holds the global environment (that is, 
 
 # 알아두면 좋을 모듈
 
-- `vim.inspect` : lua object를 읽기 편한 문자열로 변환하는 모듈.
-- `vim.regex` : lua에서 vim regex를 사용할 수 있는 모듈.
-- `vim.api` : API 함수들을 사용할 수 있는 모듈.
-- `vim.ui` : 오버라이드 가능한 UI 함수들.
-- `vim.loop` : neovim의 event-loop의 기능을 사용할 수 있는 모듈.(libuv 사용)
-- `vim.lsp` : 내장 LSP 클라이언트에 접근할 수 있는 모듈.
-- `vim.treesitter` : `tree-sitter`라이브러리 기능을 사용할 수 있는 모듈.
+- `vim.inspect` : lua object를 읽기 편한 문자열로 변환하는 모듈
+- `vim.regex` : lua에서 vim regex를 사용할 수 있는 모듈
+- `vim.api` : API 함수들을 사용할 수 있는 모듈
+- `vim.ui` : 오버라이드 가능한 UI 함수들
+- `vim.loop` : neovim의 event-loop의 기능을 사용할 수 있는 모듈(libuv 사용)
+- `vim.lsp` : 내장 LSP 클라이언트에 접근할 수 있는 모듈
+- `vim.treesitter` : `tree-sitter`라이브러리 기능을 사용할 수 있는 모듈
 
 # 커스텀 유틸리티
 
@@ -231,17 +231,17 @@ Vim에는 다양한 Mode가 존재한다. 특정한 Mode에 따라서 `vim.keyma
 
 ## Arguments
 
-- `{mode}` : Mode prefix.
-- `{lhs}` : 맵핑할 키.
-- `{rhs}` : 맵핑한 키를 통해 실행할 command 또는 lua funciton.
+- `{mode}` : Mode prefix
+- `{lhs}` : 맵핑할 키
+- `{rhs}` : 맵핑한 키를 통해 실행할 command 또는 lua funciton
 
 ## Option
 
 key를 맵핑할 때 4번째 인자에 옵션을 지정할 수 있다.
 
-- `buffer` : 특정 버퍼(`0` 또는 `true`이면 현재 버퍼를 의미).
-- `silent` : `true`이면 에러 메시지를 출력하지 않는다.
-- `expr` : `true`이면 `{rhs}`를 실행하지 않고 `return` 값을 실행한다. "표현식을 평가"해서 실행한다고 생각하면 된다.
+- `buffer` : 특정 버퍼(`0` 또는 `true`이면 현재 버퍼를 의미)
+- `silent` : `true`이면 에러 메시지를 출력하지 않는다
+- `expr` : `true`이면 `{rhs}`를 실행하지 않고 `return` 값을 실행한다. "표현식을 평가"해서 실행한다고 생각하면 된다
 
   ```lua
   vim.keymap.set('c', '<down>', function()
@@ -250,13 +250,13 @@ key를 맵핑할 때 4번째 인자에 옵션을 지정할 수 있다.
   end, { expr = true })
   ```
 
-- `desc` : 설명.
-- `remap` : 맵핑된 키에 대한 (비)재귀적 여부. 기본값은 비재귀적이다.
+- `desc` : 설명
+- `remap` : 맵핑된 키에 대한 (비)재귀적 여부. 기본값은 비재귀적이다
 
-### (Non-)recursive
+### (Non)recursive
 
-- Non-recursive(default) : `vim.keymap.set()`을 통해서 키를 맵핑하면 다른 맵핑된 `{rhs}`는 실행되지 않는다.
-- recursive : 다른 맵핑된 `{rhs}` 실행을 허용한다.
+- Non-recursive(default) : `vim.keymap.set()`을 통해서 키를 맵핑하면 다른 맵핑된 `{rhs}`는 실행되지 않는다
+- recursive : 다른 맵핑된 `{rhs}` 실행을 허용한다
 
 ```lua
 -- Non-recursive mapping (default behavior)
@@ -346,12 +346,12 @@ end
 
 Vim에는 `global`, `buffer`, `window`, `tab`, `predefined`, `env`의 환경에서 변수를 설정할 수 있다.
 
-- `vim.g` : 전역 변수.
-- `vim.b` : 현재 버퍼의 변수.
-- `vim.w` : 현재 윈도우의 변수.
-- `vim.t` : 현재 탭 페이지의 변수.
-- `vim.v` : 미리 정의된 변수.
-- `vim.env` : 에디터 세션 내의 정의한 환경 변수.
+- `vim.g` : 전역 변수
+- `vim.b` : 현재 버퍼의 변수
+- `vim.w` : 현재 윈도우의 변수
+- `vim.t` : 현재 탭 페이지의 변수
+- `vim.v` : 미리 정의된 변수
+- `vim.env` : 에디터 세션 내의 정의한 환경 변수
 
 ## Data type
 
@@ -402,7 +402,7 @@ vim.opt.smarttab = false
 
 또한 `vim.o`를 통해서도 다음과 같이 특정 환경의 옵션을 지정할 수 있다.
 
-- `vim.o` : `:set`과 동일하다.
-- `vim.go` : 전역 옵션.
-- `vim.bo` : 버퍼 스코프 옵션.
-- `vim.wo` : 윈도우 스코프 옵션.
+- `vim.o` : `:set`과 동일하다
+- `vim.go` : 전역 옵션
+- `vim.bo` : 버퍼 스코프 옵션
+- `vim.wo` : 윈도우 스코프 옵션

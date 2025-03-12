@@ -23,10 +23,10 @@ const observer = new IntersectionObserver(callback, options)
 
 ![[infinite-scroll-2.png]]
 
-- `root` : 가시성을 확인하기 위한 기준이 되는 뷰포트 요소.
-  - `null`일 경우 기본값인 브라우저 뷰포트가 기준이 된다.
-- `rootMargin` : `root`의 뷰포트의 여백(`10px 20px 30px 40px`, 위 오른쪽 아래 왼쪽).
-- `threshold` : 특정 요소가 몇 퍼센트 보여져야 정의한 콜백 함수를 실행할지를 나타내는 임계값.
+- `root` : 가시성을 확인하기 위한 기준이 되는 뷰포트 요소
+  - `null`일 경우 기본값인 브라우저 뷰포트가 기준이 된다
+- `rootMargin` : `root`의 뷰포트의 여백(`10px 20px 30px 40px`, 위 오른쪽 아래 왼쪽)
+- `threshold` : 특정 요소가 몇 퍼센트 보여져야 정의한 콜백 함수를 실행할지를 나타내는 임계값
 
 # 구현
 
