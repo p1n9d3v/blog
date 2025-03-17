@@ -123,7 +123,7 @@ legend: {
 
 ## Zoom and Pan
 
-[chartjs-plugin-zoom](https://www.chartjs.org/chartjs-plugin-zoom/latest/)을 적용하면 줌과 드래그가 가능해진다. `modifierKey`를 통해서 보조키 설정이 가능하다.
+줌과 드래그는 [chartjs-plugin-zoom](https://www.chartjs.org/chartjs-plugin-zoom/latest/)를 사용하면 쉽게 적용이 가능하다. `modifierKey`를 통해서 보조키 설정이 가능하다.
 
 ```js
 zoom: {
