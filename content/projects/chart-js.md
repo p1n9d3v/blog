@@ -173,7 +173,7 @@ scales: {
  },
 ```
 
-하지만 색을 지정할 수는 없었는데 따로 chart.js에서 기능을 제공하지 않아 직접 만들었다.
+하지만 라인 색에 따라 라벨에 색을 지정하고 싶었지만, 따로 chart.js에서 기능을 제공하지 않아 직접 만들었다.
 
 ```js
 export const multiColorLabelsPlugin = {
