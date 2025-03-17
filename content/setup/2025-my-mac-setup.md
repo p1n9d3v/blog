@@ -75,7 +75,6 @@ Homebrew는 Mac에서 사용하는 Package Manager이다. Nix-homebrew를 통해
 ```
 
 위의 코드와 같이 Nix package를 통해서 패키지를 다운로드 받을 수 있으며 homebrew(nix-homebrew)를 통해서도 패키지를 다운로드 할 수 있다.
-
 또한, 시스템 설정도 할 수 있다. 아래의 코드는 Dock에 대해서 설정한 부분이다.
 
 ```nix
@@ -96,7 +95,6 @@ Homebrew는 Mac에서 사용하는 Package Manager이다. Nix-homebrew를 통해
 ```
 
 업데이트는 `darwin-rebuild switch --flake $HOME/dotfiles/.config/nix#$USER`의 커맨드를 이용하여 업데이트 할 수 있다.
-
 전체적인 설치나 설정은 아래의 유튜브와 dotfiles 통해서 확인하기 바란다.
 
 ## References
@@ -191,7 +189,7 @@ Layzvim은 `lazy.nvim`모듈을 활용하여 쉽게 패키지를 다운로드 �
 
 ## Keymaps
 
-`keymaps.lua`에 정의한 키맵이다. "키"를 누르게 되면 "동작"이 실행되어 진다.
+Lazyvim은 `keymaps.lua`를 통해 단축키를 커스터마이징 할 수 있다. 아래는 현재 내가 정의하여 사용하고 있는 키맵이다.
 
 | 모드    | 키             | 동작                               | 설명                                      |
 | ------- | -------------- | ---------------------------------- | ----------------------------------------- |
@@ -229,11 +227,13 @@ Layzvim은 `lazy.nvim`모듈을 활용하여 쉽게 패키지를 다운로드 �
 | Cmdline | `<C-e>`        | `<C-c>`                            | cmdline 종료                              |
 
 위의 키맵 말고도 [Lazyvim에서 제공하는 키맵](https://www.lazyvim.org/keymaps)이 있다. 또한 vim의 cmdline에 `WhichKey`를 입력하면 키에 대한 테이블을 볼 수 있다.
+
 ![[my-mac-setup-6.png]]
 
 ## LazyExtras
 
 Lazyvim은 `LazyExtra` 명령어를 통해서 플러그인을 쉽게 다운로드 받을 수 있다. 다운로드하고 싶은 플러그인에 커서를 두고 `x`를 누르면 설치할 수 있다.
+
 ![[my-mac-setup-7.png]]
 
 ## AI
