@@ -116,7 +116,9 @@ GPU를 활용한 terminal emulator이며 설정도 간편하고 많은 기능들
 
 Open source Markdown editor인 노트 앱이다. backup은 git을 통해서 관리하고 있고 폴더 구조는 P.A.R.A를 사용하고 있다.
 
-> [!TIP] >[Obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)을 통해서 nvim에서 obsidian을 사용할 수 있다.
+> [!TIP]
+>
+> [Obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)을 통해서 nvim에서 obsidian을 사용할 수 있다.
 
 ## [Espanso](https://espanso.org/)
 

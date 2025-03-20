@@ -15,7 +15,8 @@ require('directory.module')
 - `/`, `.`를 통해서 경로를 구분할 수 있다
 
 > [!TIP]
-> init.lua아 파일이 있다면 `require('directory')`형태로 모듈을 불러올 수 있다.
+>
+> init.lua 파일이 있다면 `require('directory')`형태로 모듈을 불러올 수 있다.
 
 ## pcall
 
@@ -73,7 +74,8 @@ aaaaaa
 ```
 
 > [!TIP]
-> 버퍼(Buffer)는 버퍼는 파일의 내용을 메모리에 불러와 수정할 수 있는 임시 작업 공간이다.
+>
+> 버퍼(Buffer)는 파일의 내용을 메모리에 불러와 수정할 수 있는 임시 작업 공간이다.
 
 # luaeval
 
@@ -173,7 +175,7 @@ print(vim.api.nvim_eval('v:null')) -- nil
 
 해당 함수는 Vim script 표현식을 평가하고 값을 리턴한다.
 
-> [!Caution] >`luaeva()`과 동일하지만 표현식에 데이터를 넘길 수 있는 변수 `_A`를 제공하지 않는다.
+> [!Caution] > `luaeva()`과 동일하지만 표현식에 데이터를 넘길 수 있는 변수 `_A`를 제공하지 않는다.
 
 ## vim.api.nvim_command()
 
@@ -215,9 +217,9 @@ end
 vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
 ```
 
-둘 다 동일한 기능을 하는 함수이다. `t()`함수 내부의 `nvim_replace_termcodes()`를 통해서 `t'<Key>'`와 같은 문법으로 escape를 해줄 수 있다.
+두 예시 모두 동일한 기능을 한다. `t()`함수 내부의 `nvim_replace_termcodes()`를 통해서 `t'<Key>'`와 같은 문법으로 escape를 해줄 수 있다.
 
-현재는 `vim.keymap.set()` 함수를 사용할 때 opts의 `expr`이 `true`일 경우 자동적으로 키코드를 변환해주기 때문에 따로 escape 처리할 필요가 없다.
+더 편리한 방법은 `vim.keymap.set()` 함수를 사용하는 것이다. 해당 함수는 opts의 `expr`이 `true`일 경우 자동적으로 키코드를 변환해주기 때문에 따로 escape 처리할 필요가 없다.
 
 ```lua
 vim.keymap.set('i', '<Tab>', function()
@@ -268,7 +270,9 @@ vim.keymap.set('n', '<leader>b', '<leader>a', { remap = true })
 
 `{remap = true}`로 설정하게 되면 `<leader>b`를 누르면 `<leader>a`가 실행되고 `:echo "Hello"<CR>`이 실행되게 된다. 반대로 기본값으로 설정하게 되면 `:echo "Hello"<CR>`는 실행되지 않는다.
 
-> [!TIP] >`noremap`을 통해서도 Non-recursive가 적용된 키 맵핑을 할 수 있다. `vim.keymap.set()`을 사용한 것과 동일하다.
+> [!TIP]
+>
+> `noremap`을 통해서도 Non-recursive가 적용된 키 맵핑을 할 수 있다. `vim.keymap.set()`을 사용한 것과 동일하다.
 
 ## Mode
 
