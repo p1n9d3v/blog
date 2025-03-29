@@ -1,5 +1,5 @@
 ---
-title: [chart.js를 이용하여 데이터 지표 만들기]
+title: [Chart.js를 활용한 데이터 시각화]
 tags: [project]
 ---
 
