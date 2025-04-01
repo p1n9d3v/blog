@@ -31,7 +31,7 @@ tags: [project]
 
 # 차트
 
-차트는 chart.js를 사용하였다. 해당 프로덕트는 React로 구현하였기에 [react-chart-js](https://react-chartjs-2.js.org/)를 사용해줘야 한다. 차트 타입은 line을 사용하였다.
+차트는 chart.js를 사용하였다. 해당 프로덕트는 React로 구현하였기에 [react-chart-js](https://react-chartjs-2.js.org/)를 사용해야 한다. 차트 타입은 line을 사용하였다.
 
 ![[ktourstory-chart-2.png]]
 
