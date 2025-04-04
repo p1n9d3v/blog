@@ -3,7 +3,7 @@ title: 국방 오픈소스 해커톤
 tags: [experience]
 ---
 
-![[국방오픈소스-1.png]]
+![[army-hackathon-1.png]]
 
 나는 27살 늦은 나이에 육군 정보보호병으로 입대하였다. 열심히 정보보호병 임무를 수행하던 중에 국방오픈소스아카데미라는 해커톤을 알게되었다.
 
@@ -15,7 +15,7 @@ tags: [experience]
 
 # 프로젝트 시작
 
-![[국방오픈소스-2.png]]
+![[army-hackathon-2.png]]
 
 [Tomorrow Diary Github](https://github.com/p1n9d3v/tomorrow-diary/tree/dev)
 
@@ -27,7 +27,7 @@ tags: [experience]
 
 디자인은 멘토님이 [Dribbble](https://dribbble.com/)에서 마음에 드는 것을 고르고 참고하여 View들을 구성해보라고 하셨다. 팀원과 디자인을 고르고, 팀원이 Adobe XD를 사용해 본 경험이 있어 Figma를 사용하여 열심히 디자인했다. 선임 중에 디자인 전공인 선임이 있어 디자인에 있어서 많은 도움을 받았다.
 
-![[국방오픈소스-3.png]]
+![[army-hackathon-3.png]]
 
 최종적으로는 위와 같은 형태로 앱이 설계되었다. 우리는 구글 플레이스토어 출시, 오픈소스 기여, AI 등 많은 경험을 할 수 있었다. 로고도 팀원이 정말 심사숙고하고 디자인하는 선임에게 도움을 받으며 만들었다. 간단해 보이지만 굉장한 노력이 깃들어 있는 로고이다.
 

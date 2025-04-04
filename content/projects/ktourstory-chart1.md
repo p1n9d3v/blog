@@ -1,5 +1,5 @@
 ---
-title: [Chart.js를 활용한 데이터 시각화]
+title: [Chart.js를 활용한 데이터 시각화 1]
 tags: [project]
 ---
 
@@ -147,7 +147,7 @@ zoom: {
 
 ## 반응형
 
-Chart를 부모 태그를 기반하여 리사이징이 가능한데 부모 태그에 `{position : relative}` 과 옵션에 `responsive : true`를 적용해주면 반응형이 적용된다.
+Chart를 부모 태그를 기반하여 리사이징이 가능한데 부모 태그에 `{position : relative}` 스타일과 옵션에 `responsive : true`를 적용해주면 반응형이 적용된다.
 
 ## Custom Plugin
 
