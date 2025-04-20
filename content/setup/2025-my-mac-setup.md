@@ -254,7 +254,7 @@ Copilot 대체재로 나쁘지 않은 것 같다. Pro는 30일 동안 무료로 
 
 # Vimium
 
-Vim과 비슷하게 키맵을 통해서 브라우저를 조작할 수 있는 extension이다.
+브라우저에서 제공하는 Vim 기능이다. Browser 특성에 맞게 keymap이 설정되어 있으며 커스터마이징이 가능하다.
 
 ```
 unmap <c-u>
