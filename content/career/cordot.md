@@ -1,5 +1,5 @@
 ---
-title: Coredot-Lab
+title: 코어다트랩
 tags: [career]
 ---
 
