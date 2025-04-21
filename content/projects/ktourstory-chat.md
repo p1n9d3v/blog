@@ -28,7 +28,7 @@ tags: [project]
 
 ![[ktourstory-chat-1.png]]
 
-기본 구조는 채팅방 문서 -> 메시지 컬렉션 -> 메시지 문서(들) 형태로 구조를 잡았다.
+기본 구조는 채팅방 문서 -> 메시지 컬렉션 -> 메시지 문서(들) 형태로 구조를 구성했다.
 
 ![[ktourstory-chat-2.png]]
 
@@ -273,7 +273,7 @@ export async function requestNotificationPermission() {
         const permission = await Notification.requestPermission()
         return permission
     } catch (e) {
-	    return null
+     return null
     }
 }
 
@@ -290,17 +290,17 @@ export async function getDeviceToken() {
 }
 
 const registerDeviceToken = async () => {
-	const token = await getDeviceToken()
-	return token
+ const token = await getDeviceToken()
+ return token
 }
 
 const permission = await requestNotificationPermission()
     if (permission === "granted") {
-		try {
-			return await registerDeviceToken()
-		}
-		catch(e) {}
-	}
+  try {
+   return await registerDeviceToken()
+  }
+  catch(e) {}
+ }
 }
 
 ```
@@ -320,7 +320,7 @@ FirebaseError: Messaging: The notification permission was not granted and blocke
 ```ts
 export const pushNotificationForMSG = runWithGmailSecrets.firestore.document(
   'message path').onCreate(async (snap, context) => {
-	// ...code
+ // ...code
     try {
       await sendNotification(tokens, undefined, {
         title: 'New Message',
@@ -403,7 +403,7 @@ if (messaging) {
 
 FCM은 payload의 `notification` 프로퍼티에 값이 정의되어 있으면, 자동으로 알림 객체를 감지하여 알림을 생성하여 중복 알림이 발생하였는데, `notification` 대신 `data` 프로퍼티를 사용하여 데이터를 전달하였다.
 
-- https://stackoverflow.com/questions/66697332/firebase-web-push-notifications-is-triggered-twice-when-using-onbackgroundmessag
+- <https://stackoverflow.com/questions/66697332/firebase-web-push-notifications-is-triggered-twice-when-using-onbackgroundmessag>
 
 ### URL 이동
 
