@@ -678,6 +678,8 @@ export default { redo, undo, updateDOMSnapshot }
 
 ## 팀 프로젝트
 
+![[boostcamp-6.png]]
+
 나는 [Cloud Canvas](https://github.com/p1n9d3v/web37-cloud-canvas)라는 Naver Cloud의 GUI 기반 인프라 관리 도구 프로젝트의 프론트엔드로 참여했다. UI는 [Cloud Craft](https://www.cloudcraft.co/)를 모방해서 만들었고 차이점은 다이어그램을 Terraform 코드로 변환하는 것이었다.
 
 6~7주라는 짧은 기간에 기획부터 개발까지 진행하기 쉽지 않았다. 특히 우리 팀은 중간에 기획이 변경되면서 성공적으로 프로젝트를 완수할 수 있을지에 대해 많은 걱정이 있었다. 특히 내가 맡은 프론트 부분이 문제였는데, 라이브러리 없이 2D, 3D를 구현해야 했고 컴퓨터 그래픽스 지식도 부족했을 뿐더러 혼자 프론트를 맡다 보니 시간이 너무 부족했다. 나 때문에 최종 발표에서 발표도 못할까 봐 걱정이 많았다. 이때는 챌린지 때보다 잠을 더 안 잔 것 같다.
